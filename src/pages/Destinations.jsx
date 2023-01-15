@@ -5,8 +5,8 @@ const Destinations = () => {
   return (
     <div className="min-h-screen flex flex-col justify-center items-center text-white bg-gradient-to-b from-cyan-500">
       <div className="my-20">
-        <h1 className="text-4xl md:text-6xl text-center leading-8 mb-12 font-bold">
-          <span className="font-MrDafoe text-amber-400 text-7xl font-normal">Top</span>
+        <h1 className="text-4xl md:text-6xl lg:text-7xl text-center lg:leading-7 leading-6 mb-12 font-bold">
+          <span className="font-MrDafoe text-amber-400 text-7xl lg:text-8xl font-normal">Top</span>
           <br /> destinations
         </h1>
         <p className="max-w-[672px] text-center">

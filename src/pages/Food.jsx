@@ -3,8 +3,8 @@ import DestiCard from "../components/DestiCard";
 
 const Food = () => {
   return (
-    <div className="min-h-screen flex flex-col justify-center items-center">
-      <div className="my-20 md:mt-0">
+    <div className="min-h-screen mt-20 flex flex-col justify-center items-center">
+      <div className="mb-20 md:mt-0">
         <h1 className="text-6xl text-center leading-3 mb-12 font-bold">
           <span className="font-MrDafoe text-amber-400 text-7xl font-normal">
             Traditional
@@ -50,7 +50,7 @@ const Food = () => {
         </div>
       </div>
       <a
-        className="bg-transparent hover:bg-amber-400 text-black font-semibold hover:text-white py-2 px-4 border border-amber-400 hover:border-transparent rounded my-8"
+        className="bg-transparent transition-colors duration-200 hover:bg-amber-400 text-black font-semibold hover:text-white py-2 px-4 border border-amber-400 hover:border-transparent rounded my-8"
         href="#"
       >
         Learn more

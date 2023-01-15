@@ -1,17 +1,47 @@
-import React from "react";
+import React, { useState } from "react";
+import { HiMenuAlt2 } from "react-icons/hi";
 
 const Navbar = () => {
+  const [nav, setNav] = useState(false);
+  const handleNav = () => {
+    setNav(!nav);
+    // !nav? document.body.style.overflow = 'hidden' : document.body.style.overflow = 'scroll'
+  };
+
   return (
-    <nav className=" mx-auto md:backdrop-blur-sm fixed top-0 left-0 w-full flex items-center justify-between px-8 py-2 z-50">
-        <a href="#">
-          <h1 className="font-MrDafoe text-5xl text-cyan-500 bg-white px-4 py-2 rounded-lg">Rulay</h1>
-        </a>
-        <ul className="md:flex md:gap-4 text-white">
-            <li className="md:hover:text-cyan-500">Home</li>
-            <li className="md:hover:text-cyan-500">Destinations</li>
-            <li className="md:hover:text-cyan-500">Food</li>
-            <li className="md:hover:text-cyan-500">Contact</li>
+    <nav className="text-white w-full flex justify-between items-center fixed top-0 z-50 px-8">
+      <a href="#" className=" z-20">
+        <h1 className="font-MrDafoe text-5xl text-cyan-500 bg-white px-4 py-2 rounded-lg">
+          Rulay
+        </h1>
+      </a>
+      <HiMenuAlt2
+        onClick={handleNav}
+        size={35}
+        className=" lg:hidden inline-block cursor-pointer md:hover:text-cyan-500 transition-colors duration-200 z-20"
+      />
+      <div
+        className={`${
+          nav
+            ? "opacity-100 transition-opacity duration-300"
+            : "transition-opacity duration-300 opacity-0 pointer-events-none lg:pointer-events-auto lg:opacity-100 "
+        } fixed lg:static left-0 top-0 w-full lg:h-fit lg:f h-screen bg-black/70 lg:bg-transparent z-10 flex justify-end`}
+      >
+        <ul className="flex flex-col lg:flex-row lg:static fixed lg:w-fit lg:h-fit w-full h-full items-center justify-evenly py-24 lg:py-0 font-bold text-4xl lg:text-base gap-4 border p-8 lg:border-dashed">
+          <li className="md:hover:text-cyan-500 transition-colors duration-200">
+            <a href="#">Home</a>
+          </li>
+          <li className="md:hover:text-cyan-500 transition-colors duration-200">
+            Destination
+          </li>
+          <li className="md:hover:text-cyan-500 transition-colors duration-200">
+            Food
+          </li>
+          <li className="md:hover:text-cyan-500 transition-colors duration-200">
+            Contact
+          </li>
         </ul>
+      </div>
     </nav>
   );
 };

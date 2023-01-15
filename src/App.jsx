@@ -6,13 +6,15 @@ import Destinations from "./pages/Destinations";
 import Food from "./pages/Food";
 import Footer from "./pages/Footer";
 import Hero from "./pages/Hero";
+import HomePage from "./pages/HomePage";
 
 
 
 function App() {
   return (
     <div className="font-poppins">
-      <DestinationPage />
+      <Navbar />
+      <HomePage />
     </div>
   );
 }

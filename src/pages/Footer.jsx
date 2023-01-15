@@ -12,7 +12,7 @@ const Footer = () => {
       </div>
       <div className="h-[100px] md:h-[200px] w-full z-10 absolute top-0 bg-gradient-to-b from-white"></div>
       <div className="h-screen w-full bg-cyan-900 flex items-end justify-center">
-        <div className="text-white flex md:justify-around gap-4 flex-wrap w-full pb-8 px-4 justify-around">
+        <div className="text-white flex justify-evenly gap-8 flex-wrap w-full pb-8 px-4">
           <div>
             <h2 className="font-bold mb-4">LEGAL</h2>
             <ul >

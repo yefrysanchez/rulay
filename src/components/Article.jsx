@@ -2,7 +2,7 @@ import React from "react";
 
 const Article = () => {
   return (
-    <div className="relative h-[202px] max-w-[194px] rounded-xl overflow-hidden ">
+    <div className="relative h-[202px] cursor-pointer max-w-[194px] rounded-xl overflow-hidden ">
       <div className=" absolute w-full h-full bg-gradient-to-b from-transparent via-transparent to-black"></div>
       <img
         className="h-full w-full object-cover"

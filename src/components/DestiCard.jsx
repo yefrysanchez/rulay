@@ -2,7 +2,7 @@ import React from "react";
 
 const DestiCard = () => {
   return (
-    <div className="relative h-[553px] max-w-[310px] rounded-xl overflow-hidden shadow-xl">
+    <div className="relative h-[553px] max-w-[410px] rounded-xl overflow-hidden shadow-xl">
       <div className=" absolute w-full h-full bg-gradient-to-b from-transparent via-transparent to-black"></div>
       <img
         className="h-full w-full object-cover"

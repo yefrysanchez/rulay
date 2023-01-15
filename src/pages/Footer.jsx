@@ -12,10 +12,10 @@ const Footer = () => {
       </div>
       <div className="h-[100px] md:h-[200px] w-full z-10 absolute top-0 bg-gradient-to-b from-white"></div>
       <div className="h-screen w-full bg-cyan-900 flex items-end justify-center">
-        <div className="text-white flex justify-evenly gap-8 flex-wrap w-full pb-8 px-4">
+        <div className="text-white flex justify-evenly z-50 gap-8 flex-wrap w-full pb-8 px-4">
           <div>
             <h2 className="font-bold mb-4">LEGAL</h2>
-            <ul >
+            <ul>
               <li className="font-thin mb-1">
                 <a href="#">MSA Self Managed</a>
               </li>
@@ -88,16 +88,24 @@ const Footer = () => {
           <div className="flex items-center text-3xl">
             <ul>
               <li className="font-thin mb-5">
-                <a href="#"><i className="fa-brands fa-facebook"></i></a>
+                <a href="#">
+                  <i className="fa-brands fa-facebook"></i>
+                </a>
               </li>
               <li className="font-thin mb-5">
-                <a href="#"><i className="fa-brands fa-twitter"></i></a>
+                <a href="#">
+                  <i className="fa-brands fa-twitter"></i>
+                </a>
               </li>
               <li className="font-thin mb-5">
-                <a href="#"><i className="fa-brands fa-instagram"></i></a>
+                <a href="#">
+                  <i className="fa-brands fa-instagram"></i>
+                </a>
               </li>
               <li className="font-thin mb-5">
-                <a href="#"><i className="fa-brands fa-linkedin"></i></a>
+                <a href="#">
+                  <i className="fa-brands fa-linkedin"></i>
+                </a>
               </li>
             </ul>
           </div>

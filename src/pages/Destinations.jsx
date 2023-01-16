@@ -11,7 +11,7 @@ const Destinations = () => {
         </h1>
         <p className="max-w-[672px] text-center">
           {" "}
-          It’s hard enough deciding to move, you don’t have to worry about where
+          It's hard enough deciding to move, you don't have to worry about where
           to move to. These are some of the most popular and best locations to
           move to based on a number of factors.{" "}
         </p>

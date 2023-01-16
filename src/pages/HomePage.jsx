@@ -1,18 +1,31 @@
-import React from 'react'
-import Destinations from './Destinations'
-import Food from './Food'
-import Footer from './Footer'
-import Hero from './Hero'
+import React from "react";
+import Navbar from "../components/Navbar";
+import Destinations from "./Destinations";
+import Food from "./Food";
+import Footer from "./Footer";
+import Hero from "./Hero";
+import { easeInOut, motion } from "framer-motion";
 
 const HomePage = () => {
   return (
-    <div>
-        <Hero />
-        <Destinations />
-        <Food />
-        <Footer />
-    </div>
-  )
-}
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{
+        opacity: 1,
+        transition: {
+          duration: 1,
+          easeInOut,
+        },
+      }}
+      exit={{ opacity: 0 }}
+    >
+      <Navbar />
+      <Hero />
+      <Destinations />
+      <Food />
+      <Footer />
+    </motion.div>
+  );
+};
 
-export default HomePage
+export default HomePage;

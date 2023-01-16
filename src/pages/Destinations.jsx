@@ -3,7 +3,7 @@ import DestiCard from "../components/DestiCard";
 
 const Destinations = () => {
   return (
-    <div className="min-h-screen flex flex-col justify-center items-center text-white bg-gradient-to-b from-cyan-500">
+    <div id="destination" className="min-h-screen flex flex-col justify-center items-center text-white bg-gradient-to-b from-cyan-500">
       <div className="my-20">
         <h1 className="text-4xl md:text-6xl lg:text-7xl text-center lg:leading-7 leading-6 mb-12 font-bold">
           <span className="font-MrDafoe text-amber-400 text-7xl lg:text-8xl font-normal">Top</span>
@@ -16,10 +16,7 @@ const Destinations = () => {
           move to based on a number of factors.{" "}
         </p>
       </div>
-      <div className="grid lg:grid-cols-4 sm:grid-cols-2 gap-4 mx-2 grid-cols-1">
-        <DestiCard />
-        <DestiCard />
-        <DestiCard />
+      <div className="max-w-[1300px]">
         <DestiCard />
       </div>
     </div>

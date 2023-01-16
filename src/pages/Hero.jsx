@@ -2,7 +2,7 @@ import React from "react";
 
 const Hero = () => {
   return (
-    <header className="relative h-screen w-full">
+    <header id="home" className="relative h-screen w-full">
       <div className=" absolute w-full h-full bg-black opacity-50"></div>
       <video src="../../src/assets/home-video.mp4" autoPlay loop muted className="h-full w-full object-cover"/>
       <div className="absolute select-none inset-0 flex justify-center items-center">

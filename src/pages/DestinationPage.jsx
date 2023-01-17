@@ -16,7 +16,7 @@ const DestinationPage = () => {
   const { src } = useParams();
 
   const data = dest.find((e) => e.src === src);
-  const { about, place, img1, img2, img3 } = data;
+  const { about, place, img, img1, img2, img3 } = data;
 
   return (
     <motion.div
@@ -24,14 +24,14 @@ const DestinationPage = () => {
       animate={{
         opacity: 1,
         transition: {
-          duration: 2,
+          duration: 1,
         
         },
       }}
       exit={{ opacity: 0 }}
     >
       <BackNav />
-      <DestiHeader place={place} src={src} />
+      <DestiHeader place={place} src={img} />
       <section className="mt-8 flex flex-col-reverse mx-auto md:max-w-[1300px] md:justify-center items-center md:items-start  md:flex-row">
         <section className="px-12 xl:px-0">
           <h2 className="text-4xl font-bold text-cyan-600">About</h2>

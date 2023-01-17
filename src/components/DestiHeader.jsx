@@ -1,4 +1,5 @@
 import React from "react";
+import headerImg from "../assets/destination-header.png";
 
 const DestiHeader = ({place, src}) => {
   return (
@@ -10,7 +11,7 @@ const DestiHeader = ({place, src}) => {
         <div className="absolute inset-0 bg-black opacity-30"></div>
         <img
           className="w-full h-full object-cover object-center"
-          src={`../../src/assets/dest/${src}.jpg`}
+          src={src}
           alt=""
         />
       </div>
@@ -19,7 +20,7 @@ const DestiHeader = ({place, src}) => {
         <div className="absolute bottom-0 z-20 w-full h-[100px] md:h-[200px] bg-gradient-to-t from-white"></div>
         <img
           className="absolute top-0 z-10 w-full"
-          src="../src/assets/destination-header.png"
+          src={headerImg}
           alt="background"
         />
       </div>

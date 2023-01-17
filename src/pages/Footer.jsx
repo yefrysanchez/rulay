@@ -1,4 +1,5 @@
 import React from "react";
+import beach from "../../src/assets/image-beach.png";
 
 const Footer = () => {
   return (
@@ -6,8 +7,8 @@ const Footer = () => {
       <div className="w-full absolute top-0 z-10">
         <img
           className="w-full h-full"
-          src="../../src/assets/image-beach.png"
-          alt=""
+          src={beach}
+          alt="beach image"
         />
       </div>
       <div className="h-[100px] md:h-[200px] w-full z-10 absolute top-0 bg-gradient-to-b from-white"></div>

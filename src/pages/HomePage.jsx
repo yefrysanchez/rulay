@@ -4,7 +4,7 @@ import Destinations from "./Destinations";
 import Food from "./Food";
 import Footer from "./Footer";
 import Hero from "./Hero";
-import { easeInOut, motion } from "framer-motion";
+import { motion } from "framer-motion";
 
 const HomePage = () => {
   return (
@@ -13,8 +13,7 @@ const HomePage = () => {
       animate={{
         opacity: 1,
         transition: {
-          duration: 1,
-          easeInOut,
+          duration: 2,
         },
       }}
       exit={{ opacity: 0 }}

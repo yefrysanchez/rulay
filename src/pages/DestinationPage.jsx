@@ -24,7 +24,7 @@ const DestinationPage = () => {
       animate={{
         opacity: 1,
         transition: {
-          duration: 1,
+          duration: 2,
         
         },
       }}
@@ -38,7 +38,7 @@ const DestinationPage = () => {
           <p className="my-8">{about}</p>
           <Photos img1={img1} img2={img2} img3={img3} place={place} />
         </section>
-        <article>
+        <article className="w-full">
           <Weather place={place}/>
         </article>
       </section>

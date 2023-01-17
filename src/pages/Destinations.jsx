@@ -11,9 +11,8 @@ const Destinations = () => {
         </h1>
         <p className="max-w-[672px] text-center">
           {" "}
-          It's hard enough deciding to move, you don't have to worry about where
-          to move to. These are some of the most popular and best locations to
-          move to based on a number of factors.{" "}
+          It's hard enough deciding where to go, you don't have to worry any more. These are some of the most popular and best locations to
+          travel in the Dominican Republic based on a number of factors.{" "}
         </p>
       </div>
       <div className="max-w-[1300px]">

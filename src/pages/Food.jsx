@@ -3,7 +3,10 @@ import DestiCard from "../components/DestiCard";
 
 const Food = () => {
   return (
-    <div id="food" className="min-h-screen mt-20 flex flex-col justify-center items-center">
+    <div
+      id="food"
+      className="min-h-screen mt-20 flex flex-col justify-center items-center"
+    >
       <div className="mb-20 md:mt-0">
         <h1 className="text-6xl text-center leading-3 mb-12 font-bold">
           <span className="font-MrDafoe text-amber-400 text-7xl font-normal">
@@ -27,8 +30,7 @@ const Food = () => {
             alt=""
           />
         </div>
-        <div className="col-span-1 rounded-md overflow-hidden">
-          
+        <div className="col-span-1 rounded-md overflow-hidden ">
           <img
             className="h-full w-full object-cover"
             src="https://micocinadominicana.com/wp-content/uploads/2021/09/Sancocho-My-Dominican-Kitchen-4.jpg"

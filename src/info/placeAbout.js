@@ -16,7 +16,7 @@ export const dest = [
     src: "pedernales",
     img: "https://tugranviaje.com/wp-content/uploads/2018/04/postal-desde-Bahia-de-Las-Aguilas.jpg",
     img1: "https://live.staticflickr.com/4026/4615210881_a5a51f7632_b.jpg",
-    img2: "https://dominicancarrental.com/wp-content/uploads/2021/01/clear-blue-sea-164041-1024x768-1.jpg",
+    img2: "https://www.dominicanabroad.com/wp-content/uploads/2019/12/glamping-things-to-do-dominican-republic-1024x684.jpeg",
     img3: "https://i0.wp.com/www.siempreviajero.com/wp-content/uploads/2020/01/Bahia-de-las-Aguilas-en-Familia.jpg?fit=2560%2C1440&ssl=1",
     about:
       "Bahía de las Águilas (Eagles' Bay) is located inside Jaragua National Park, in the western end of Pedernales province. One of the Dominican Republic’s most beautiful beaches is located there. It is a protected area in where it is possible to explore a completely virgin zone to where only a few paths arrive, and where there are not any facilities of any kind. It is an ideal setting for adventure and ecotourism lovers. Even though camping is not allowed inside the protected areas, some other activities can be carried out, for example, trekking, biking or just swimming in some of the Caribbean region’s most crystalline waters for a refreshing bath.",

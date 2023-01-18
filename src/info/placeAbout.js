@@ -34,7 +34,7 @@ export const dest = [
   },
   {
     place: "Punta Cana",
-    province: "Santo Domingo",
+    province: "Higuey",
     src: "puntacana",
     img: "https://i.travelapi.com/hotels/28000000/27580000/27573300/27573282/404fc3bf_z.jpg",
     img1: "https://www.fivestaralliance.com/files/fivestaralliance.com/field/image/nodes/2011/15116/15116_0_hardrockhotelandcasinopuntacana_fsa-g.jpg",

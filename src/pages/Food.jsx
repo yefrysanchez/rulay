@@ -7,7 +7,7 @@ const Food = () => {
       id="food"
       className="min-h-screen mt-20 flex flex-col justify-center items-center"
     >
-      <div className="mb-20 md:mt-0">
+      <div className="mb-20 md:mt-0 px-4">
         <h1 className="text-6xl text-center leading-3 mb-12 font-bold">
           <span className="font-MrDafoe text-amber-400 text-7xl font-normal">
             Traditional

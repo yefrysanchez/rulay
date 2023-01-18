@@ -23,7 +23,7 @@ const DestiCard = () => {
     },
     {
       place: "Punta Cana",
-      province: "Santo Domingo",
+      province: "Higuey",
       src: "puntacana",
       img: "https://i.travelapi.com/hotels/28000000/27580000/27573300/27573282/404fc3bf_z.jpg"
     },

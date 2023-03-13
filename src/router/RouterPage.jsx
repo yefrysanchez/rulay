@@ -6,6 +6,7 @@ import { AnimatePresence } from "framer-motion";
 
 export const RouterPage = () => {
   const location = useLocation();
+  
   return (
     <AnimatePresence>
       <Routes location={location} key={location}>

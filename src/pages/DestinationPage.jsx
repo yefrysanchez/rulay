@@ -9,9 +9,6 @@ import { BackNav } from "../components/BackNav";
 import { motion } from "framer-motion";
 
 const DestinationPage = () => {
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
 
   const { src } = useParams();
 

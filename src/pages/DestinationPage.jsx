@@ -7,9 +7,9 @@ import { useParams } from "react-router-dom";
 import { dest } from "../info/placeAbout";
 import { BackNav } from "../components/BackNav";
 import { motion } from "framer-motion";
+import PostSection from "../components/PostSection";
 
 const DestinationPage = () => {
-
   const { src } = useParams();
 
   const data = dest.find((e) => e.src === src);
@@ -22,7 +22,6 @@ const DestinationPage = () => {
         opacity: 1,
         transition: {
           duration: 1,
-        
         },
       }}
       exit={{ opacity: 0 }}
@@ -36,9 +35,11 @@ const DestinationPage = () => {
           <Photos img1={img1} img2={img2} img3={img3} place={place} />
         </section>
         <article className="w-full">
-          <Weather place={place}/>
+          <Weather place={place} />
         </article>
       </section>
+      <PostSection />
+      
       <Footer />
     </motion.div>
   );

@@ -4,7 +4,7 @@ export const dest = [
     province: "Santo Domingo",
     src: "zonacolonial",
     img: "http://t3.gstatic.com/licensed-image?q=tbn:ANd9GcSCpUuYznkC_bH31Qwmo0Rvj4O6Z-g5WUdgYkPU0FHIjx4sZpYuYB0Xc2j3MUdgoVyK",
-    img1: "https://www.godominicanrepublic.com/wp-content/uploads/2017/11/Colonial-Zone-nighttime-1.jpg",
+    img1: "https://www.cataloniahotels.com/es/blog/wp-content/uploads/2017/09/zona-colonial-santo-domingo.jpg",
     img2: "https://traveler.marriott.com/es/wp-content/uploads/sites/2/2018/10/GI-609685012-Monasterio-de-San-Francisco.jpg",
     img3: "https://media.tacdn.com/media/attractions-splice-spp-674x446/0b/39/7d/71.jpg",
     about:
@@ -28,7 +28,7 @@ export const dest = [
     img: "https://upload.wikimedia.org/wikipedia/commons/4/41/Santa_Barbara_de_Saman%C3%A1_%28Dominican_Republic%29.jpeg",
     img1: "https://www.elviajedetuvida.es/wp-content/uploads/2021/10/RepublicaDominicana-31.jpg",
     img2: "https://www.arecoa.com/wp-content/uploads/2022/07/samana.jpg",
-    img3: "https://www.godominicanrepublic.com/wp-content/uploads/2017/12/rmp12-cayo-levantado.-samana-.jpg?x41638",
+    img3: "https://www.hola.com/imagenes/viajes/20180213120305/peninsula-samana-republica-dominicana/0-536-331/ballenas-samana-republica-dominicana2-a.jpg",
     about:
       "The capital city of Samaná is Santa Bárbara de Samaná,in the Dominican Republic. This city has a wide variety of entertainment offers to discover the real Dominican culture. One of its main attractions is La Churcha, which is a symbol of the Dominican freedom; this church was constructed in the 19th century by freed slaves. You can not forget La Marina Avenue, where you can find thousands of colourful wooden houses dating from the colonial period. The city of Santa Bárbara de Sanamá has a privileged position, it is located in Samaná Bay, which is full of natural treasures like its beaches or the famous Marine Mammals Sanctuary. This lively city is known for its friendliness people and its delicious cuisine, like “sancochos” and “tostones”, which you can taste in its restaurants.",
   },

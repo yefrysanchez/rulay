@@ -40,7 +40,7 @@ const Food = () => {
         <div className="col-span-1 rounded-md overflow-hidden">
           <img
             className="h-full w-full object-cover"
-            src="https://puertoviejony.com/2/wp-content/uploads/2019/02/los-3-golpes.jpg"
+            src="https://www.goya.com/media/7949/mangu-tres-golpes.jpg?quality=80"
             alt=""
           />
         </div>

@@ -1,10 +1,14 @@
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import { RouterPage } from "./router/RouterPage";
+import "./App.css"
+
 
 function App() {
   const ScrollToTop = () => {
     const { pathname } = useLocation();
+
+    
     useEffect(() => {
       window.scrollTo(0, 0);
     }, [pathname]);
@@ -13,10 +17,9 @@ function App() {
   };
 
   return (
-    <div className="font-poppins scroll-smooth">
+    <div className="font-poppins">
       <ScrollToTop />
       <RouterPage />
-      {/* <DestinationPage /> */}
     </div>
   );
 }

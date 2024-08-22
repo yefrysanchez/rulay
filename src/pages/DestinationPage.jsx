@@ -6,7 +6,6 @@ import Photos from "../components/Photos";
 import { useParams } from "react-router-dom";
 import { dest } from "../info/placeAbout";
 import { BackNav } from "../components/BackNav";
-import { motion } from "framer-motion";
 import PostSection from "../components/PostSection";
 
 const DestinationPage = () => {
@@ -16,16 +15,7 @@ const DestinationPage = () => {
   const { about, place, img, img1, img2, img3 } = data;
 
   return (
-    <motion.div
-      initial={{ opacity: 0 }}
-      animate={{
-        opacity: 1,
-        transition: {
-          duration: 1,
-        },
-      }}
-      exit={{ opacity: 0 }}
-    >
+    <div>
       <BackNav />
       <DestiHeader place={place} src={img} />
       <section className="mt-8 flex flex-col-reverse mx-auto md:max-w-[1300px] md:justify-center items-center md:items-start  md:flex-row">
@@ -39,9 +29,9 @@ const DestinationPage = () => {
         </article>
       </section>
       <PostSection />
-      
+
       <Footer />
-    </motion.div>
+    </div>
   );
 };
 

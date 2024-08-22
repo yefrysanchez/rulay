@@ -1,7 +1,6 @@
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import { RouterPage } from "./router/RouterPage";
-import "./App.css"
 
 
 function App() {

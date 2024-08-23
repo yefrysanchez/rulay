@@ -4,7 +4,7 @@ import beach from "../../src/assets/image-beach.png";
 const Footer = () => {
   return (
     <div className="min-h-screen relative mt-20 flex flex-col justify-center items-center">
-      <div className="w-full absolute top-0 z-10">
+      <div className="w-full absolute h-1/2 top-0 z-10">
         <img
           className="w-full h-full"
           src={beach}
@@ -12,8 +12,8 @@ const Footer = () => {
         />
       </div>
       <div className="h-[100px] md:h-[200px] w-full z-10 absolute top-0 bg-gradient-to-b from-white"></div>
-      <div className="h-screen w-full bg-cyan-900 flex items-end justify-center">
-        <div className="text-white flex justify-evenly z-50 gap-8 flex-wrap w-full pb-8 px-4">
+      <div className="h-screen w-full bg-cyan-900 flex items-end">
+        <div className="text-white flex justify-center z-50 gap-8 w-full pb-8 px-4">
           <div>
             <h2 className="font-bold mb-4">LEGAL</h2>
             <ul>
@@ -37,29 +37,7 @@ const Footer = () => {
               </li>
             </ul>
           </div>
-          <div>
-            <h2 className="font-bold mb-4">PRODUCT</h2>
-            <ul>
-              <li className="font-thin mb-1">
-                <a href="#">Why us</a>
-              </li>
-              <li className="font-thin mb-1">
-                <a href="#">Features</a>
-              </li>
-              <li className="font-thin mb-1">
-                <a href="#">Community</a>
-              </li>
-              <li className="font-thin mb-1">
-                <a href="#">Omnichannel</a>
-              </li>
-              <li className="font-thin mb-1">
-                <a href="#">Webinars</a>
-              </li>
-              <li className="font-thin mb-1">
-                <a href="#">Marketplace</a>
-              </li>
-            </ul>
-          </div>
+
           <div>
             <h2 className="font-bold mb-4">COMPANY</h2>
             <ul>

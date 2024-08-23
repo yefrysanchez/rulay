@@ -12,7 +12,7 @@ export const BackNav = () => {
           Rulay
         </h1>
       </div>
-      <button onClick={() => navigate(-1)}
+      <button aria-label="navigate to the previuos page" onClick={() => navigate(-1)}
         className="bg-transparent transition-colors duration-200 bg-amber-400 text-black font-semibold hover:text-white py-2 px-4 border rounded my-8"
    
       >

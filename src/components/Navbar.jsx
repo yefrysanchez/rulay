@@ -29,16 +29,16 @@ const Navbar = () => {
       >
         <ul className="flex  flex-col lg:flex-row lg:static fixed lg:w-fit lg:h-fit w-full h-full items-center justify-evenly py-24 lg:py-0 font-bold text-4xl lg:text-base gap-4  p-8 ">
           <li onClick={()=> setNav(false)} className="md:hover:text-cyan-500 transition-colors duration-200 ">
-            <a href="#home">Home</a>
+            <a aria-label="go to top" href="#home">Home</a>
           </li>
           <li onClick={()=> setNav(false)} className="md:hover:text-cyan-500 transition-colors duration-200">
-            <a href="#destination">Destination</a>
+            <a aria-label="go to destinations" href="#destination">Destinations</a>
           </li>
           <li onClick={()=> setNav(false)} className="md:hover:text-cyan-500 transition-colors duration-200">
-            <a href="#food">Food</a>
+            <a aria-label="go to Food" href="#food">Food</a>
           </li>
           <li onClick={()=> setNav(false)} className="md:hover:text-cyan-500 transition-colors duration-200">
-            <a target="_blank" href="https://www.linkedin.com/in/yefrysanchez/">
+            <a aria-label="go to contact" target="_blank" href="https://www.linkedin.com/in/yefrysanchez/">
               Contact
             </a>
           </li>

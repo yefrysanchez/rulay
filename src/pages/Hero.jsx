@@ -6,7 +6,7 @@ const Hero = () => {
   return (
     <header id="home" className="relative h-screen w-full">
       <div className="absolute w-full flex justify-center left-0 bottom-8 z-40 text-6xl text-white animate-bounce">
-        <a href="#destination">
+        <a aria-label="go to destinations" href="#destination">
           <CiCircleChevDown />
         </a>
       </div>

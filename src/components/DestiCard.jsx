@@ -31,7 +31,7 @@ const DestiCard = () => {
 
   const destinations = dest.map((e) => {
     return (
-      <Link to={e.src} key={e.src}>
+      <Link aria-label="go to the destination page" to={e.src} key={e.src}>
         <div className="relative w-full h-[300px] lg:h-[450px] rounded-lg overflow-hidden mb-4">
           <div className=" absolute w-full h-full bg-gradient-to-b from-transparent bg-black/40 overflow-hidden"></div>
           <img

@@ -9,7 +9,7 @@ const Food = () => {
     >
       <div className="mb-20 md:mt-0 px-4">
         <h1 className="text-6xl text-center leading-3 mb-12 font-bold">
-          <span className="font-MrDafoe text-amber-400 text-7xl font-normal">
+          <span className="font-MrDafoe text-amber-500 text-7xl font-normal">
             Traditional
           </span>
           <br /> food
@@ -53,6 +53,7 @@ const Food = () => {
         </div>
       </div>
       <a
+      aria-label="go to the top"
         className="bg-transparent transition-colors duration-200 hover:bg-amber-400 text-black font-semibold hover:text-white py-2 px-4 border border-amber-400 hover:border-transparent rounded my-8"
         href="#"
       >

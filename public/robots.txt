@@ -1,0 +1,15 @@
+# Allow all web crawlers to access everything
+User-agent: *
+Disallow:
+
+# Optional: Specify a sitemap to help search engines find all your pages
+Sitemap: https://yourdomain.com/sitemap.xml
+
+# Block specific crawlers or directories (if needed)
+# For example, to block a specific crawler:
+# User-agent: BadBot
+# Disallow: /
+
+# To block a specific directory:
+# User-agent: *
+# Disallow: /private-directory/

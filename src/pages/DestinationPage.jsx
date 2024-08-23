@@ -12,7 +12,7 @@ const DestinationPage = () => {
   const { src } = useParams();
 
   const data = dest.find((e) => e.src === src);
-  const { about, place, img, img1, img2, img3 } = data;
+  const { about, place, img, img1, img2, img3, province } = data;
 
   return (
     <div>
@@ -22,14 +22,13 @@ const DestinationPage = () => {
         <section>
           <h2 className="text-4xl font-bold text-cyan-600">About</h2>
           <p className="my-8">{about}</p>
-          <Photos img1={img1} img2={img2} img3={img3} place={place} />
         </section>
         <article className="w-full">
-          <Weather place={place} />
+          <Weather place={place} province={province} />
         </article>
       </section>
+      <Photos img1={img1} img2={img2} img3={img3} place={place} />
       <PostSection />
-
       <Footer />
     </div>
   );

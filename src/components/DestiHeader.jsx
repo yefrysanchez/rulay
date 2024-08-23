@@ -5,7 +5,7 @@ const DestiHeader = ({place, src}) => {
   return (
     <header className="relative pt-12 md:pt-0 flex flex-col items-center overflow-hidden justify-center">
       <div className=" relative text-white w-[90%] top-0 max-w-[1300px] h-[200px] md:h-[500px] z-40 bg-slate-400 overflow-hidden rounded-lg">
-        <h1 className="absolute z-50 text-3xl md:text-7xl font-bold top-1/3 left-1/2 translate-x-[-50%] drop-shadow-2xl">
+        <h1 className="absolute z-50 text-3xl md:text-7xl text-center font-bold top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 drop-shadow-2xl">
           {place}
         </h1>
         <div className="absolute inset-0 bg-black opacity-30"></div>

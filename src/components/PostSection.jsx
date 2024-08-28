@@ -5,9 +5,10 @@ import LogOutBtn from "./LogOutBtn";
 import Avatar from "./Avatar";
 import PostComment from "./PostComment";
 import AllComments from "./AllComments";
+import { Toaster } from 'react-hot-toast';
 
 const PostSection = () => {
-  const [isLogged, setIsLogged] = useState(true);
+  const [isLogged, setIsLogged] = useState(false);
   const [showModal, setShowModal] = useState(false);
   const [isRegistered, setIsRegistered] = useState(true);
   const [isLoading, setIsLoading] = useState(false);
@@ -15,7 +16,7 @@ const PostSection = () => {
 
   return (
     <section className="mt-8 flex flex-col mx-auto md:max-w-[1300px] px-4">
- 
+ < Toaster />
       {isRegistered ? (
         <LoginModal
         isLoading={isLoading}

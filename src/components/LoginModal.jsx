@@ -1,5 +1,6 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useState } from "react";
 import Loading from "./Loading";
+
 
 const LoginModal = ({setIsLoading,
   isLoading,
@@ -28,6 +29,7 @@ const LoginModal = ({setIsLoading,
         }),
       });
       if (!res.ok) {
+        setIsLoading(false);
         throw new Error("Check credentials");
       }
       const token = await res.json();
@@ -35,6 +37,7 @@ const LoginModal = ({setIsLoading,
       console.log(token);
       setShowModal(false);
     } catch (err) {
+      setIsLoading(false);
       setError(err.message); // Set error message
     }
   };

@@ -1,12 +1,51 @@
-import React from "react";
+import React, { useEffect, useRef, useState } from "react";
 import Loading from "./Loading";
 
-const LoginModal = ({
+const LoginModal = ({setIsLoading,
   isLoading,
   showModal,
   setShowModal,
   setIsRegistered,
 }) => {
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const url = import.meta.env.VITE_LOGIN_URL;
+  const [error, setError] = useState(null);
+
+  const handleSubmit = async (e) => {
+    e.preventDefault(); // Prevent default form submission
+    setError(null)
+    try {
+      setIsLoading(true)
+      const res = await fetch(url, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          email: email,
+          password: password,
+        }),
+      });
+      if (!res.ok) {
+        throw new Error("Check credentials");
+      }
+      const token = await res.json();
+      setIsLoading(false)
+      console.log(token);
+      setShowModal(false);
+    } catch (err) {
+      setError(err.message); // Set error message
+    }
+  };
+
+  const handleCloseModal = () => {
+    setEmail("");
+    setPassword("");
+    setError(null);
+    setShowModal(false);
+  };
+
   return (
     <div
       aria-hidden="true"
@@ -21,7 +60,7 @@ const LoginModal = ({
               Login in to Rulay
             </h3>
             <button
-              onClick={() => setShowModal(false)}
+              onClick={handleCloseModal}
               type="button"
               className="end-2.5 text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ms-auto inline-flex justify-center items-center "
             >
@@ -34,9 +73,9 @@ const LoginModal = ({
               >
                 <path
                   stroke="currentColor"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
                   d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"
                 />
               </svg>
@@ -45,18 +84,19 @@ const LoginModal = ({
           </div>
 
           <div className="p-4 md:p-5">
-            <form className="space-y-4" action="#">
+            <form onSubmit={handleSubmit} className="space-y-4">
               <div>
                 <label
-                  for="email"
+                  htmlFor="email"
                   className="block mb-2 text-sm font-medium text-gray-900 "
                 >
                   Email
                 </label>
                 <input
+                  value={email}
                   type="email"
                   name="email"
-                  id="email"
+                  onChange={(e) => setEmail(e.target.value)}
                   className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 "
                   placeholder="name@company.com"
                   required
@@ -64,21 +104,24 @@ const LoginModal = ({
               </div>
               <div>
                 <label
-                  for="password"
+                  htmlFor="password"
                   className="block mb-2 text-sm font-medium text-gray-900 "
                 >
                   Password
                 </label>
                 <input
+                  value={password}
                   type="password"
                   name="password"
-                  id="password"
+                  onChange={(e) => setPassword(e.target.value)}
                   placeholder="••••••••"
                   className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 "
                   required
                 />
               </div>
-
+              {error && (
+                <p className="text-red-500 text-sm text-center">{error}</p>
+              )}
               <button
                 disabled={isLoading}
                 type="submit"

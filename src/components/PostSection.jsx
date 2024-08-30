@@ -9,7 +9,6 @@ import { Toaster } from 'react-hot-toast';
 import { useSelector } from "react-redux";
 
 const PostSection = () => {
-  const [ogged, setIsLogged] = useState(false);
   const [showModal, setShowModal] = useState(false);
   const [isRegistered, setIsRegistered] = useState(true);
   const [isLoading, setIsLoading] = useState(false);

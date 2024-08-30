@@ -1,10 +1,22 @@
 import React, { useState } from "react";
 import Loading from "./Loading";
 import toast from "react-hot-toast";
+import { useParams } from "react-router-dom";
+import { useSelector, useDispatch } from "react-redux";
+import { newCommentAdded } from "../store/slices/authSlice";
 
-const PostComment = ({ isLogged, setShowModal}) => {
+const PostComment = ({ isLogged, setShowModal }) => {
   const [comment, setComment] = useState("");
   const [isLoading, setIsLoading] = useState(false);
+  const url = import.meta.env.VITE_COMMENTS_URL;
+  const { src } = useParams();
+
+  // Redux State ///
+  const { user } = useSelector((state) => state.auth);
+  const { email, name } = user || "";
+  const { newComment } = useSelector((state) => state.auth);
+  const dispatch = useDispatch();
+  ///////////////////
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -15,10 +27,30 @@ const PostComment = ({ isLogged, setShowModal}) => {
     }
     setIsLoading(true);
     try {
-  
-    
+      const res = await fetch(url, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          comment,
+          userName: name,
+          postId: src,
+          email,
+        }),
+      });
+      if (!res.ok) {
+        throw new Error("There was an error");
+      }
+
+      const data = await res.json();
+      dispatch(newCommentAdded(!newComment));
+      console.log(data);
     } catch (error) {
-      console.log(error);
+      console.error(error.msg);
+    } finally {
+      setComment("");
+      setIsLoading(false);
     }
   };
 

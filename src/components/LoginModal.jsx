@@ -17,6 +17,7 @@ const LoginModal = ({
 
   // Redux State////
   const dispatch = useDispatch();
+  ///////////////////////////
 
   const handleSubmit = async (e) => {
     e.preventDefault(); // Prevent default form submission
@@ -56,7 +57,6 @@ const LoginModal = ({
 
   return (
     <div
-      aria-hidden="true"
       className={`${
         showModal ? "fixed" : "hidden"
       } flex bg-black/50 h-full overflow-y-auto overflow-x-hidden z-50 justify-center items-center w-full inset-0`}

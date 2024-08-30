@@ -6,12 +6,16 @@ import Avatar from "./Avatar";
 import PostComment from "./PostComment";
 import AllComments from "./AllComments";
 import { Toaster } from 'react-hot-toast';
+import { useSelector } from "react-redux";
 
 const PostSection = () => {
-  const [isLogged, setIsLogged] = useState(false);
+  const [ogged, setIsLogged] = useState(false);
   const [showModal, setShowModal] = useState(false);
   const [isRegistered, setIsRegistered] = useState(true);
   const [isLoading, setIsLoading] = useState(false);
+
+  //Redux State////
+  const {isLogged} = useSelector((state) => state.auth)
 
 
   return (
@@ -56,7 +60,7 @@ const PostSection = () => {
           </div>
         )}
       </div>
-      <PostComment />
+      <PostComment isLogged={isLogged} setShowModal={setShowModal}/>
       <AllComments />
     </section>
   );

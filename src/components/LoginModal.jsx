@@ -1,8 +1,10 @@
 import React, { useState } from "react";
 import Loading from "./Loading";
+import { useDispatch } from "react-redux";
+import { login } from "../store/slices/authSlice";
 
-
-const LoginModal = ({setIsLoading,
+const LoginModal = ({
+  setIsLoading,
   isLoading,
   showModal,
   setShowModal,
@@ -13,11 +15,14 @@ const LoginModal = ({setIsLoading,
   const url = import.meta.env.VITE_LOGIN_URL;
   const [error, setError] = useState(null);
 
+  // Redux State////
+  const dispatch = useDispatch();
+
   const handleSubmit = async (e) => {
     e.preventDefault(); // Prevent default form submission
-    setError(null)
+    setError(null);
     try {
-      setIsLoading(true)
+      setIsLoading(true);
       const res = await fetch(url, {
         method: "POST",
         headers: {
@@ -32,9 +37,9 @@ const LoginModal = ({setIsLoading,
         setIsLoading(false);
         throw new Error("Check credentials");
       }
-      const token = await res.json();
-      setIsLoading(false)
-      console.log(token);
+      const { user, token } = await res.json();
+      dispatch(login({ user, token }));
+      setIsLoading(false);
       setShowModal(false);
     } catch (err) {
       setIsLoading(false);

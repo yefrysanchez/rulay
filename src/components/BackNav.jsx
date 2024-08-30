@@ -13,7 +13,7 @@ export const BackNav = () => {
         </h1>
       </div>
       <button aria-label="navigate to the previuos page" onClick={() => navigate(-1)}
-        className="bg-transparent transition-colors duration-200 bg-amber-400 text-black font-semibold hover:text-white py-2 px-4 border rounded my-8"
+        className="transition-colors duration-200 bg-amber-400 text-black font-semibold hover:text-white py-2 px-4 border rounded my-8"
    
       >
         Go Back

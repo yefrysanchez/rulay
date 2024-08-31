@@ -10,7 +10,7 @@ const AllComments = () => {
   const { src } = useParams();
 
   //Redux State///
-const {newComment} = useSelector(state => state.auth)
+  const { newComment } = useSelector((state) => state.auth);
   /////////////////
 
   const getComments = async () => {
@@ -40,6 +40,7 @@ const {newComment} = useSelector(state => state.auth)
         AllComments.map((comment) => (
           <div key={comment._id}>
             <Comment
+              email={comment.email}
               name={comment.userName}
               createdAt={comment.createdAt}
               comment={comment.comment}

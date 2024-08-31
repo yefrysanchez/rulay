@@ -40,6 +40,7 @@ const AllComments = () => {
         AllComments.map((comment) => (
           <div key={comment._id}>
             <Comment
+              _id={comment._id}
               email={comment.email}
               name={comment.userName}
               createdAt={comment.createdAt}

@@ -43,12 +43,11 @@ const PostComment = ({ isLogged, setShowModal }) => {
         throw new Error("There was an error");
       }
 
-      const data = await res.json();
-      dispatch(newCommentAdded(!newComment));
-      console.log(data);
+      const msg = await res.json();
+      toast.success(msg.msg)
     } catch (error) {
       console.error(error.msg);
-    } finally {
+    } finally { dispatch(newCommentAdded(!newComment));
       setComment("");
       setIsLoading(false);
     }

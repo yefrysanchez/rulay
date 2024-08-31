@@ -45,6 +45,9 @@ const LoginModal = ({
     } catch (err) {
       setIsLoading(false);
       setError(err.message); // Set error message
+    } finally {
+      setEmail("");
+      setPassword("");
     }
   };
 

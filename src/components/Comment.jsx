@@ -6,7 +6,7 @@ import CommentDelete from "./CommentDelete";
 import CommentEdit from "./CommentEdit";
 import { useSelector } from "react-redux";
 
-const Comment = ({ name, comment, createdAt, email }) => {
+const Comment = ({ name, comment, createdAt, email, _id }) => {
   const [isDeleteOpen, setIsDeleteOpen] = useState(false);
   const [isEditOpen, setIsEditOpen] = useState(false);
 
@@ -24,7 +24,6 @@ const Comment = ({ name, comment, createdAt, email }) => {
         {user?.email === email && (
           <div className="flex gap-4 text-2xl text-gray-700">
             <FaRegEdit
-              comment={comment}
               onClick={() => setIsEditOpen(true)}
               className="lg:hover:text-cyan-400 cursor-pointer"
             />
@@ -33,9 +32,9 @@ const Comment = ({ name, comment, createdAt, email }) => {
               className="lg:hover:text-red-400 cursor-pointer"
             />
             {isDeleteOpen && (
-              <CommentDelete setIsDeleteOpen={setIsDeleteOpen} />
+              <CommentDelete _id={_id} setIsDeleteOpen={setIsDeleteOpen} />
             )}
-            {isEditOpen && <CommentEdit setIsEditOpen={setIsEditOpen} />}
+            {isEditOpen && <CommentEdit _id={_id} comment={comment} setIsEditOpen={setIsEditOpen} />}
           </div>
         )}
       </div>

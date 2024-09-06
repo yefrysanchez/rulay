@@ -15,22 +15,22 @@ const DestinationPage = () => {
   const { about, place, img, img1, img2, img3, province } = data;
 
   return (
-    <div>
+    <section>
       <BackNav />
       <DestiHeader place={place} src={img} />
-      <section className="mt-8 px-4 flex flex-col-reverse mx-auto md:max-w-[1300px] md:justify-center items-center md:items-start  md:flex-row">
-        <section>
+      <div className="mt-8 px-4 flex flex-col-reverse mx-auto md:max-w-[1300px] md:justify-center items-center md:items-start  md:flex-row">
+        <div>
           <h2 className="text-4xl font-bold text-cyan-600">About</h2>
           <p className="my-8">{about}</p>
-        </section>
+        </div>
         <article className="w-full">
           <Weather place={place} province={province} />
         </article>
-      </section>
+      </div>
       <Photos img1={img1} img2={img2} img3={img3} place={place} />
       <PostSection />
       <Footer />
-    </div>
+    </section>
   );
 };
 

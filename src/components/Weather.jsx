@@ -1,10 +1,4 @@
 import { useEffect, useState } from "react";
-import {
-  FaSun,
-  FaCloud,
-  FaCloudShowersHeavy,
-  FaSnowflake,
-} from "react-icons/fa";
 import { WiDaySunny, WiCloudy, WiRain, WiSnow } from "react-icons/wi";
 
 const weatherIcons = {
@@ -22,7 +16,6 @@ const getIcon = (weatherCondition) => {
 };
 
 const Weather = ({ place, province }) => {
-  const [city, setCity] = useState("");
   const [weather, setWeather] = useState(null);
   const [error, setError] = useState("");
   const VITE_API_KEY = import.meta.env.VITE_API_KEY;

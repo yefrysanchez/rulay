@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import { RouterPage } from "./router/RouterPage";
+import Loader from "./components/Loader";
 
 
 function App() {
@@ -16,8 +17,9 @@ function App() {
   };
 
   return (
-    <div className="font-poppins">
+    <div className="font-poppins relative">
       <ScrollToTop />
+      <Loader />
       <RouterPage />
     </div>
   );

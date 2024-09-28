@@ -28,16 +28,16 @@ const Navbar = () => {
         } fixed lg:static left-0 top-0 w-full lg:h-fit lg:f h-screen bg-black/70 lg:bg-transparent z-10 flex justify-end`}
       >
         <ul className="flex  flex-col lg:flex-row lg:static fixed lg:w-fit lg:h-fit w-full h-full items-center justify-evenly py-24 lg:py-0 font-bold text-4xl lg:text-base gap-4  p-8 ">
-          <li onClick={()=> setNav(false)} className="md:hover:text-cyan-500 hover:md:border-b-2 border-amber-300 transition-colors duration-200 ">
+          <li onClick={()=> setNav(false)} className="text-amber-500 md:hover:text-cyan-500 md:border-b-2 border-transparent hover:border-amber-300 transition-colors duration-200 ">
             <a aria-label="go to top" href="#home">Home</a>
           </li>
-          <li onClick={()=> setNav(false)} className="md:hover:text-cyan-500 hover:md:border-b-2 border-amber-300 transition-colors duration-200">
+          <li onClick={()=> setNav(false)} className="text-amber-500 md:hover:text-cyan-500 md:border-b-2 border-transparent hover:border-amber-300 transition-colors duration-200">
             <a aria-label="go to destinations" href="#destination">Destinations</a>
           </li>
-          <li onClick={()=> setNav(false)} className="md:hover:text-cyan-500 hover:md:border-b-2 border-amber-300 transition-colors duration-200">
+          <li onClick={()=> setNav(false)} className="text-amber-500 md:hover:text-cyan-500 md:border-b-2 border-transparent hover:border-amber-300 transition-colors duration-200">
             <a aria-label="go to Food" href="#food">Food</a>
           </li>
-          <li onClick={()=> setNav(false)} className="md:hover:text-cyan-500 hover:md:border-b-2 border-amber-300 transition-colors duration-200">
+          <li onClick={()=> setNav(false)} className="text-amber-500 md:hover:text-cyan-500 md:border-b-2  hover:border-amber-300 transition-colors duration-200">
             <a aria-label="go to contact" target="_blank" href="https://www.linkedin.com/in/yefrysanchez/">
               Contact
             </a>

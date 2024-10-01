@@ -8,7 +8,7 @@ export const BackNav = () => {
   return (
     <nav className="flex w-full over justify-between items-center max-w-[1300px] fixed top-0 left-1/2 px-1 h-44 z-50 translate-x-[-50%] ">
       <div className="bg-cyan-600/30 rounded-lg" >
-        <h1 className="font-MrDafoe text-5xl text-white border px-4 py-2 rounded-lg">
+        <h1 className="font-MrDafoe backdrop-blur-sm text-5xl text-white border px-4 py-2 rounded-lg">
           Rulay
         </h1>
       </div>

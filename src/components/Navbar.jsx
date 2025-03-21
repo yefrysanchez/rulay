@@ -11,11 +11,11 @@ const Navbar = () => {
     },
     {
       title: "Destinations",
-      link: "/",
+      link: "",
     },
     {
       title: "Things To Do",
-      link: "/",
+      link: "",
     },
   ];
 
